@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Formulario</title>
+    
+</head>
+<body>
+    <form action="/prueba" method="post">
+
+       <div>
+        <label>Nombre</label>
+        <input type="text" name="nombre">
+       </div>
+
+        <div>
+        <label>Apellido</label>
+        <input type="text" name="apellido" >
+        </div>
+
+        <div>
+        <label>Edad</label>
+        <input type="number" name="edad">
+        </div>
+
+        <div>
+        <label>Nacionalidad</label>
+
+        <select name="nacionalidad">
+            <option value="argentina">Argentina</option>
+            <option value="brasil">Brasil</option>
+            <option value="uruguay">Uruguay</option>
+        </select>
+
+        </div>
+            <label>¿Sos mayor de edad?</label>
+            <input type="radio" name="mayorDeEdad" id="option-si"><label for="option-si">Si</label>
+            <input type="radio" name="mayorDeEdad" id="option-no"><label for="option-no">No</label>
+        <div>
+        </div>
+
+        <div>
+            <label>Seleccioná tus hobbites</label>
+
+            <input type="checkbox" name="hobbies" id="checbox-futbol">
+            <label for="checbox-futbol">Fútbol</label>
+
+            <input type="checkbox" name="hobbies" id="checbox-videojuegos">
+            <label for="checbox-videojuegos">Videojuegos</label>
+
+            <input type="checkbox" name="hobbies" id="checbox-musica">
+            <label for="checbox-musica">Musica</label>
+
+        </div>
+
+        <div>
+            <input type="submit">
+        </div>
+
+
+
+    </form>
+    
+</body>
+</html>
