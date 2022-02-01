@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+div {
+    color: red;
+    background-color: grey;
+}
+
+#primerDiv{
+    color: green;
+    background-color: pink;
+    height: 70px;
+    width: 70%;
+    margin: auto;
+    border: 2px solid black;
+}
+
+.claseDePrueba{
+    color: blue;
+    width: 100px;
+    margin: 10px 0px;
+}
