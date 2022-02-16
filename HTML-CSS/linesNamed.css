@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  font-family: "nunito";
+}
+
+main > * {
+  background-color: darkblue;
+  text-align: center;
+  color: white;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background-color: lightgray;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: [ menu-start ] 1fr [menu-end content-start] 4fr [content-end];
+  grid-template-rows:
+    [header-start]
+    1fr
+    [header-end content-start]
+    4fr
+    [menu-end ]
+    4fr
+    [footer-start]
+    1fr
+    [footer-end];
+}
+
+header {
+  grid-column: menu-start / contenido-end;
+}
+
+nav {
+  grid-row: header-end / menu-end;
+}
+
+article {
+  grid-row: header-end / footer-start;
+}
+
+footer {
+  grid-column: menu-start / content-end;
+  grid-row: footer-start / footer-end;
+}
